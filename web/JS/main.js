@@ -1,5 +1,3 @@
-
-
 function feedbackValidation() { }
 function adminValidation() {
     const def_username = "admin";
@@ -21,9 +19,9 @@ function adminValidation() {
 
 
 
-function createCookie(name, value, days) {
-    var expires = "";
-    if (days) {
+/*function createCookie(name, value, days) {
+  var expires = "";
+   if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = "; expires=" + date.toGMTString();
@@ -49,3 +47,7 @@ function readCookie(name) {
 function eraseCookie(name) {
     createCookie(name, "", -1);
 }
+
+function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};*/
