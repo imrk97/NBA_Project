@@ -16,7 +16,7 @@
         }
 
     </script>
-    <script src="JS/main.js"></script>
+
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -27,9 +27,25 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
         rel="stylesheet">
     <!-- //online-fonts -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
+            authDomain: "nbacanteen.firebaseapp.com",
+            databaseURL: "https://nbacanteen.firebaseio.com",
+            projectId: "nbacanteen",
+            storageBucket: "nbacanteen.appspot.com",
+            messagingSenderId: "719056664091"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!--<script src="JS/main.js"></script>-->
+    <script src="JS/datacontrol.js"></script>
 </head>
 
 <body>
+
 
     <section class="main-banner" id="home">
         <div class="header-top-canteen text-right">
@@ -48,7 +64,8 @@
             <div class="baner-info-w3ls text-left">
                 <h1>Welcome to<br> E-Canteen System</a></h1>
                 <h6 class="mx-auto mt-4">Ultimate Tool For Modern<br>Canteen System</h6>
-                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="login.html" role="button">LogIN</a>
+                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" id="abc" onclick="fun()" href="login.html"
+                    role="button">LogIN</a>
                 <!--sighin button-->
                 <div class="banner-high-lights text-left">
 
@@ -140,6 +157,7 @@
         </div>
     </section>
     <!-- //footer -->
+
 
 </body>
 
