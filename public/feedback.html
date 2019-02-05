@@ -18,6 +18,7 @@
 
     </script>
     <script src="JS/main.js"></script>
+    <script src="JS/datacontrol.js"></script>
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- portfolio -->
@@ -30,6 +31,34 @@
         rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <!-- //online-fonts -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
+            authDomain: "nbacanteen.firebaseapp.com",
+            databaseURL: "https://nbacanteen.firebaseio.com",
+            projectId: "nbacanteen",
+            storageBucket: "nbacanteen.appspot.com",
+            messagingSenderId: "719056664091"
+        };
+        firebase.initializeApp(config);
+        var cust_name=document.getElementById("name").value.trim();
+    var cust_email=document.getElementById("email").value.trim();
+    var cust_feedback=document.getElementById("feedback").value.trim();
+    var database=firebase.database();
+    var cust_date = new Date();
+    var ref = database.ref('Feedback');
+
+    var data ={
+        name: cust_name,
+        email: cust_email,
+        issue: cust_feedback,
+        date: cust_date
+    }
+
+    ref.push(data);
+    </script> -->
 </head>
 
 <body>
@@ -73,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 contact-form">
-                    <form action="index.html" onsubmit="return feedbackValidation()">
+                    <form  onsubmit="return fun()">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
                                 <label>Name *</label>
