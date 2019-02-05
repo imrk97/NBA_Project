@@ -41,39 +41,13 @@
             messagingSenderId: "719056664091"
         };
         firebase.initializeApp(config);
-    // var cust_name=document.getElementById("name").value.trim();
-    // var cust_email=document.getElementById("email").value.trim();
-    // var cust_feedback=document.getElementById("feedback").value.trim();
-    // var database=firebase.database();
-    // var cust_date = new Date();
-    // var ref = database.ref('Feedback');
-
-    // var data ={
-    //     name: cust_name,
-    //     email: cust_email,
-    //     issue: cust_feedback,
-    //     date: cust_date
-    // }
-
-    // ref.push(data);
     </script> 
 </head>
 
 <body>
     <section class="inner-banner" id="home">
         <div class="header-top-w3layouts text-right">
-            <ul id="menu">
-                <li>
-                    <input id="check02" type="checkbox" name="menu" />
-                    <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
-                    <ul class="submenu">
-
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact Developers</a></li>
-
-                    </ul>
-                </li>
-            </ul>
+            
         </div>
         <!-- //Navigation -->
         <!-- //banner -->
@@ -83,6 +57,9 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="breadcrumb-item active">Contact Developers</li>
+                <li class="breadcrumb-item">
+                    <a href="login.html">Login</a>
+                </li>
             </ol>
             <!---->
         </div>
@@ -100,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 contact-form">
-                    <form action="#" id="feedbackForm">
+                    <form action="feedback.html" id="feedbackForm">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
                                 <label>Name *</label>
@@ -124,7 +101,7 @@
                 </div>
 
             </div>
-            <script src="JS/datacontrol.js"></script>
+            <script src="JS/feedbacksubmit.js"></script>
     </section>
     <!-- //contact -->
 

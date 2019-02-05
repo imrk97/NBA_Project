@@ -16,6 +16,28 @@
         }
 
     </script>
+
+    <script>
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
+            authDomain: "nbacanteen.firebaseapp.com",
+            databaseURL: "https://nbacanteen.firebaseio.com",
+            projectId: "nbacanteen",
+            storageBucket: "nbacanteen.appspot.com",
+            messagingSenderId: "719056664091"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <script src="JS/main.js"></script>
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
@@ -33,66 +55,59 @@
 
 <body>
     <section class="inner-banner" id="home">
-        
+        <div class="header-top-w3layouts text-right">
+        </div>
         <!-- //Navigation -->
         <!-- //banner -->
-        <div class="inner-page-info text-center">
-            <ol class="breadcrumb text-center mx-auto">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="feedback.html">Contact Developer</a></li>
-                <li class="breadcrumb-item active">Login</li>
-            </ol>
-            <!---->
         </div>
     </section>
     <!-- /contact -->
     <section class="wedo py-lg-5 py-5">
         <div class="container py-lg-5 py-3">
             <div class="text-center">
-                <h3 class="tittle_head">Log In</h3>
-                <!--<p class="main_p mt-4 mb-4 pt-2 text-center mx-auto">Nulla pellentesque mi non laoreet eleifend.
-                    Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi
-                    ipsum, consectetur ac ipsum </p>
-                -->
+                <h3 class="tittle_head">Welcome Canteen Adminstrator</h3>
             </div>
-            <div class="contact-info row py-5">
-                <!--<div class="col-lg-6 mt-lg-0 mt-5">
-                    <div class="contact-right">
-                        <h2 class="mb-3">Dont hesitate to contact us for any kind of information</h2>
-                        <p><span class="fas mr-2 fa-mobile-alt"></span> +12 327 8976 2334</p>
-                    </div>
+            <br><br>
+
+            <div class="row">
+                <div class="col-sm-9">
+
+
+
                 </div>
-                -->
-                <div class="col-lg-6 contact-form">
-                    <form action="mainpage.html" onsubmit="return adminValidation()">
+
+                <div class="col-sm-3">
+                    <form action="mainpage.html" id="addfoodForm">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
-                                <label>Username *</label>
-                                <input type="text" class="form-control" id="user" placeholder="" required>
+                                <!-- <label>Name *</label> -->
+                                <input type="text" class="form-control" id="itemname" placeholder="Item Name" required>
+                                <br>
                             </div>
                             <div class="styled-input">
-                                <label>Password *</label>
-                                <input type="password" class="form-control" id="pass" placeholder="" required>
-
+                                <!-- <label>Description *</label> -->
+                                <textarea class="form-control" id="desc" placeholder="Description" required></textarea>
+                                <br>
                             </div>
-
-                            <!--<div class="styled-input mb-4">
-                                <label>How can we help?</label>
-                                <textarea name="issues" class="form-control" id="iq" placeholder=""></textarea>
-
+                            <div class="styled-input agile-styled-input-top">
+                                <!-- <label>Name *</label> -->
+                                <input type="text" class="form-control" id="price" placeholder="Price" required>
+                                <br>
                             </div>
-                            -->
                         </div>
-                        <br />
-                        <input type="submit" value="Log In">
+                        <br>
+
+                        <input type="submit" value="Add Item">
+
                     </form>
                 </div>
-
             </div>
+            <!-- </div>
+
+            </div> -->
 
     </section>
+    <script src="JS/dataadd.js"></script>
     <!-- //contact -->
 
     <!-- footer -->
