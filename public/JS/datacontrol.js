@@ -1,20 +1,16 @@
-//var firebase = require("firebase");
-function fun() {
-     var firebase = require('firebase');
-    var config = {
-        apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
-        authDomain: "nbacanteen.firebaseapp.com",
-        databaseURL: "https://nbacanteen.firebaseio.com",
-        projectId: "nbacanteen",
-        storageBucket: "nbacanteen.appspot.com",
-        messagingSenderId: "719056664091"
-    };
-    firebase.initializeApp(config);
+document.getElementById('feedbackForm').addEventListener('submit', submitForm);
+
+function submitForm(e) {
+    e.preventDefault();
+
+    console.log('after prevent default');
+
     var cust_name = document.getElementById("name").value.trim();
     var cust_email = document.getElementById("email").value.trim();
     var cust_feedback = document.getElementById("feedback").value.trim();
+    var temp_date = new Date();
+    var cust_date = temp_date.toString();
     var database = firebase.database();
-    var cust_date = new Date();
     var ref = database.ref('Feedback');
 
     var data = {
@@ -25,7 +21,5 @@ function fun() {
     }
 
     ref.push(data);
-    console.log('inside fun()');
-    return true;
+    console.log('inside fun..');
 }
-
