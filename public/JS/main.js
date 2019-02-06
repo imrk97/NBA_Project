@@ -5,8 +5,8 @@ function feedbackValidation() {
 }
 
 function adminValidation() {
-    const def_username = "admin";
-    const def_password = "admin";
+    const def_username = "nbacanteen@";
+    const def_password = "nbacanteen@";
     //Values extracted from frontend
     var username = document.getElementById("user").value.trim();
     //var username = document.getElementById("user");
