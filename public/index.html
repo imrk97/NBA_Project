@@ -16,6 +16,12 @@
         }
 
     </script>
+    <script>
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
+        </script>
 
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
@@ -30,6 +36,7 @@
     
     <!--<script src="JS/main.js"></script>-->
     <script src="JS/datacontrol.js"></script>
+    <link rel="icon" type="image/png" href="images/bppimt.ico"/>
 </head>
 
 <body>

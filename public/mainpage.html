@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Log In to adminstrator</title>
+    <title>E Canteen System: B.P.P.I.M.T / Main Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="" />
@@ -39,6 +39,7 @@
     </script>
 
     <script src="JS/main.js"></script>
+    <link href="css/tablestyle.css" type="text/css" rel="stylesheet" media="all">
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- portfolio -->
@@ -51,14 +52,25 @@
         rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <!-- //online-fonts -->
+    <link rel="icon" type="image/png" href="images/bppimt.ico"/>
 </head>
 
 <body>
     <section class="inner-banner" id="home">
-        <div class="header-top-w3layouts text-right">
-        </div>
+        <div class="header-top-w3layouts text-right"> 
         <!-- //Navigation -->
         <!-- //banner -->
+        <div class="inner-page-info text-center">
+            <ol class="breadcrumb text-center mx-auto">
+                <li class="breadcrumb-item active">Edit Menu</li>
+                <li class="breadcrumb-item">
+                    <a href="orderpage.html">View Order</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="index.html">LOG OUT</a>
+                </li>
+            </ol>
+            <!---->
         </div>
     </section>
     <!-- /contact -->
@@ -69,28 +81,37 @@
             </div>
             <br><br>
 
-            <div class="row">
+             <div class="row">
                 <div class="col-sm-9">
-
-
-
+                        <table width="89%" class="table-fill" id="ordertable">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">FOOD NAME</th>
+                                        <th class="text-left">DETAILS</th>
+                                        <th class="text-left">PRICE</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-hover" id="">
+                                   
+                                </tbody>
+                            </table>
                 </div>
 
                 <div class="col-sm-3">
                     <form action="mainpage.html" id="addfoodForm">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
-                                <!-- <label>Name *</label> -->
+                                
                                 <input type="text" class="form-control" id="itemname" placeholder="Item Name" required>
                                 <br>
                             </div>
                             <div class="styled-input">
-                                <!-- <label>Description *</label> -->
+                                
                                 <textarea class="form-control" id="desc" placeholder="Description" required></textarea>
                                 <br>
                             </div>
                             <div class="styled-input agile-styled-input-top">
-                                <!-- <label>Name *</label> -->
+                                
                                 <input type="text" class="form-control" id="price" placeholder="Price" required>
                                 <br>
                             </div>
@@ -108,6 +129,8 @@
 
     </section>
     <script src="JS/dataadd.js"></script>
+    <script src = "https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="JS/dataview.js"></script>
     <!-- //contact -->
 
     <!-- footer -->

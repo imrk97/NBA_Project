@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>E Canteen System: B.P.P.I.M.T / Order Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+
+    <script>
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
+            authDomain: "nbacanteen.firebaseapp.com",
+            databaseURL: "https://nbacanteen.firebaseio.com",
+            projectId: "nbacanteen",
+            storageBucket: "nbacanteen.appspot.com",
+            messagingSenderId: "719056664091"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="JS/main.js"></script>
+    <link href="css/tablestyle.css" type="text/css" rel="stylesheet" media="all">
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- portfolio -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
+    <!-- //online-fonts -->
+    <link rel="icon" type="image/png" href="images/bppimt.ico"/>
+</head>
+
+<body>
+    <section class="inner-banner" id="home">
+        <div class="header-top-w3layouts text-right">
+            <!-- //Navigation -->
+            <!-- //banner -->
+            <div class="inner-page-info text-center">
+                <ol class="breadcrumb text-center mx-auto">
+                    <li class="breadcrumb-item">
+                        <a href="mainpage.html">Edit Menu</a>
+                    </li>
+                    <li class="breadcrumb-item active">View Order</li>
+                    <li class="breadcrumb-item active">
+                            <a href="index.html">LOG OUT</a>
+                    </li>
+                </ol>
+                <!---->
+            </div>
+    </section>
+    <!-- /contact -->
+    <section class="wedo py-lg-5 py-5">
+        <div class="container py-lg-5 py-3">
+            <div class="text-center">
+                <h3 class="tittle_head">Today's Order</h3>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- <table width="89%" class="table-fill" id="ordertable">
+                        <thead>
+                            <tr>
+                                <th class="text-left">FOOD NAME</th>
+                                <th class="text-left">NO OF ORDER</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover" id="">
+                           
+                        </tbody>
+                    </table> -->
+
+
+                </div>
+            </div>
+
+    </section>
+    <script src = "https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!-- //contact -->
+
+    <!-- footer -->
+    <section class="foot-top-w3layouts pt-5">
+
+        <div class="cpy-right text-center pb-5">
+            <a href="#home" class="move-top scroll"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+        </div>
+    </section>
+    <!-- //footer -->
+
+</body>
+
+</html>
