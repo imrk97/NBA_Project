@@ -16,7 +16,7 @@
         }
 
     </script>
-    
+
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- portfolio -->
@@ -31,12 +31,12 @@
     <!-- //online-fonts -->
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="JS/connection.js"></script>
-    <link rel="icon" type="image/png" href="images/bppimt.ico"/>
+    <link rel="icon" type="image/png" href="images/bppimt.ico" />
 </head>
 
 <body>
     <section class="inner-banner" id="home">
-        
+
         <!-- //Navigation -->
         <!-- //banner -->
         <div class="inner-page-info text-center">
@@ -69,27 +69,20 @@
                 </div>
                 -->
                 <div class="col-lg-6 contact-form">
-                    <form id="loginform">
+                     <form id="loginform">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
                                 <label>Username *</label>
-                                <input type="text" class="form-control" id="user" placeholder="" required>
+                                <input type="username" class="form-control" id="user_temp" placeholder="" required>
                             </div>
                             <div class="styled-input">
                                 <label>Password *</label>
-                                <input type="password" class="form-control" id="pass" placeholder="" required>
+                                <input type="password" autocomplete="current-password" class="form-control" id="pass_temp" placeholder="" required>
 
                             </div>
-
-                            <!--<div class="styled-input mb-4">
-                                <label>How can we help?</label>
-                                <textarea name="issues" class="form-control" id="iq" placeholder=""></textarea>
-
-                            </div>
-                            -->
                         </div>
-                        <br />
-                        <input type="submit" value="Log In">
+                        <br>
+                        <input type="submit" value="Login">
                     </form>
                 </div>
 
@@ -97,7 +90,7 @@
 
     </section>
     <!-- //contact -->
-    <script src="JS/main.js"></script>
+
 
     <!-- footer -->
     <section class="foot-top-w3layouts pt-5">
@@ -116,7 +109,7 @@
         </div>
     </section>
     <!-- //footer -->
-
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

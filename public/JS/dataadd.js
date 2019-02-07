@@ -17,16 +17,8 @@ function addForm(e) {
         FoodDesc: food_desc,
         FoodPrice: food_price
     }
-    // var ref_1 = database.ref('user/user2');//child('user1');
-    // var data1 = {
-    //     username: 'nbacanteen@',
-    //     password: 'nbacanteen@'
-    }
-
-
     ref.push(data);
-    // ref_1.push(data1);
-    // console.log(data1);
     alert(food_name + "  Added");
-    // console.log('inside fun..');
+    location.reload();
+
 }

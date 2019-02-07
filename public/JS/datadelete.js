@@ -7,4 +7,5 @@ function deleteForm(e) {
 
     database.remove();
     alert("Menu Cleared");
+    location.reload();
 }
