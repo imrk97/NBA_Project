@@ -5,13 +5,13 @@ database.once('value', function(snapshot){
 
         snapshot.forEach(function(data){
             var foodname = data.val().FoodName;
-            var fooddesc= data.val().FoodDesc;
             var foodprice= data.val().FoodPrice;
+            var foodorder= data.val().Order;
 
             content += '<tr>';
             content += '<td>' + foodname + '</td>'; //column1
-            content += '<td>' + fooddesc + '</td>'; //column2
-            content += '<td>' + foodprice + '</td>';//column3
+            content += '<td>' + foodprice + '</td>'; //column2
+            content += '<td>' + foodorder + '</td>';//column3
             content += '</tr>';
         });
 
