@@ -16,7 +16,7 @@
         }
 
     </script>
-    <script src="JS/main.js"></script>
+    
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- portfolio -->
@@ -29,6 +29,8 @@
         rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <!-- //online-fonts -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="JS/connection.js"></script>
     <link rel="icon" type="image/png" href="images/bppimt.ico"/>
 </head>
 
@@ -67,7 +69,7 @@
                 </div>
                 -->
                 <div class="col-lg-6 contact-form">
-                    <form action="mainpage.html" onsubmit="return adminValidation()">
+                    <form id="loginform">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
                                 <label>Username *</label>
@@ -95,6 +97,7 @@
 
     </section>
     <!-- //contact -->
+    <script src="JS/main.js"></script>
 
     <!-- footer -->
     <section class="foot-top-w3layouts pt-5">
