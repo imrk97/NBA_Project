@@ -24,6 +24,16 @@
         });
     </script>
 
+    <script>
+        if(sessionStorage.getItem("cheak_flag")!='1'){
+            window.stop();
+            alert("Please login First");
+            location.replace("login.html");
+        }
+
+        // sessionStorage.setItem("cheak_flag", "1");
+    </script>
+
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script src="JS/connection.js"> </script>
 
@@ -41,6 +51,7 @@
         rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <!-- //online-fonts -->
+    <script src="JS/logout.js"></script>
     <link rel="icon" type="image/png" href="images/bppimt.ico"/>
 </head>
 
@@ -56,7 +67,7 @@
                     <a href="orderpage.html">View Order</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    <a href="index.html">LOG OUT</a>
+                        <a href ="#" onclick="logOut()">LOG OUT</a>
                 </li>
             </ol>
             <!---->

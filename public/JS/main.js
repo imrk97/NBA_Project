@@ -21,6 +21,7 @@ function adminValidation(e) {
         console.log(def_password + def_username);
         console.log("database value taken");
         if (usernametemp == def_username && passwordtemp == def_password) {
+            sessionStorage.setItem("cheak_flag", "1");
             location.replace("mainpage.html");
         }
         else {
