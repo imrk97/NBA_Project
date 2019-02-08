@@ -21,6 +21,6 @@ function submitForm(e) {
     }
 
     ref.push(data);
-    console.log('inside fun..');
-    alert(cust_name+ ", your feedback has been sent to us..Thank you..");
+
+    alert(cust_name + ", your feedback has been sent to us..Thank you..");
 }

@@ -1,3 +1,4 @@
+//firebsae details
 var config = {
     apiKey: "AIzaSyD4Aq8pjCISVuQYei0t1fPBV2_BpWq3SNo",
     authDomain: "nbacanteen.firebaseapp.com",
@@ -6,4 +7,5 @@ var config = {
     storageBucket: "nbacanteen.appspot.com",
     messagingSenderId: "719056664091"
 };
+//initialsation
 firebase.initializeApp(config);
