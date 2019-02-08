@@ -1,17 +1,16 @@
-var database = firebase.database().ref().child('Menu/item');
+var database = firebase.database().ref().child('Menu');
 database.once('value', function(snapshot){
     if(snapshot.exists()){
         var content = '';
 
         snapshot.forEach(function(data){
-            var foodname = data.val().FoodName;
-            var foodprice= data.val().FoodPrice;
-            var foodorder= data.val().Order;
-
+            var ordername = data.val().OrderName;
+            //var food= data.val().FoodPrice;
+            var foodorder= data.val().FoodOrder;
+                console.log()
             content += '<tr>';
-            content += '<td>' + foodname + '</td>'; //column1
-            content += '<td>' + foodprice + '</td>'; //column2
-            content += '<td>' + foodorder + '</td>';//column3
+            content += '<td>' + ordername + '</td>'; //column1
+            content += '<td>' + foodorder + '</td>';//column2
             content += '</tr>';
         });
 

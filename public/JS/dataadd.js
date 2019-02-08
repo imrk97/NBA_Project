@@ -10,16 +10,23 @@ function addForm(e) {
     var food_price = document.getElementById("price").value.trim();
 
     var database = firebase.database();
-    var ref = database.ref('Menu/item');
+    var ref = database.ref('Menu');
+    // var ref_order = database.ref('order/item');
 
     var data = {
         FoodName: food_name,
         FoodDesc: food_desc,
         FoodPrice: food_price,
-        Order: "0"
+
+        OrderName: food_name + ' ( ' + food_price + ' ) ',
+        FoodOrder: '0'
     }
     ref.push(data);
+
+    // ref_order.child(food_name + '(' + food_price + ')').set('0');
     alert(food_name + "  Added");
     location.reload();
 
 }
+
+// ref.child("Item").set("dfdfd");

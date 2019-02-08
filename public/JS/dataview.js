@@ -1,4 +1,4 @@
-var database = firebase.database().ref().child('Menu/item');
+var database = firebase.database().ref().child('Menu');
 database.once('value', function(snapshot){
     if(snapshot.exists()){
         var content = '';
