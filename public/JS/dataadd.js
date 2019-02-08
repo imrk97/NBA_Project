@@ -11,19 +11,18 @@ function addForm(e) {
 
     var database = firebase.database();
     var ref = database.ref('Menu');
-    // var ref_order = database.ref('order/item');
+    //var ref_order = database.ref('order/item');
 
     var data = {
         FoodName: food_name,
         FoodDesc: food_desc,
         FoodPrice: food_price,
-
-        OrderName: food_name + ' ( ' + food_price + ' ) ',
+        OrderName: food_name + ' ( ' + food_desc + ' )' + '    ₹ ' + food_price ,
         FoodOrder: '0'
     }
     ref.push(data);
 
-    // ref_order.child(food_name + '(' + food_price + ')').set('0');
+    //ref_order.child(food_name + ' ( ' + food_price + ' ) ').set('0');
     alert(food_name + "  Added");
     location.reload();
 
