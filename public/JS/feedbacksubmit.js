@@ -4,7 +4,7 @@ function submitForm(e) {
     e.preventDefault();
 
     console.log('after prevent default');
-
+    let roll=11;
     var cust_name = document.getElementById("name").value.trim();
     var cust_email = document.getElementById("email").value.trim();
     var cust_feedback = document.getElementById("feedback").value.trim();
@@ -15,6 +15,7 @@ function submitForm(e) {
 
     var data = {
         name: cust_name,
+        rollno: roll,
         email: cust_email,
         issue: cust_feedback,
         date: cust_date
