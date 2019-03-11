@@ -10,8 +10,8 @@ database1.once('value', function (snapshot) {
             var cust_date=data.val().date;
             var cust_email=data.val().email;
             content += '<tr>';
-            content += '<td>' + cust_name + '</td>'; //column1
-            content += '<td>' + roll + '</td>';//column2
+            content += '<td>' + cust_name +' ('+roll+')' + '</td>'; //column1
+            //content += '<td>' + roll + '</td>';//column2
             content += '<td>' + cust_email + '</td>';
             content += '<td>' + cust_feedback + '</td>';
             content += '<td>' + cust_date + '</td>';

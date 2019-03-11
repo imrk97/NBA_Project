@@ -66,11 +66,14 @@
             <!-- //banner -->
             <div class="inner-page-info text-center">
                 <ol class="breadcrumb text-center mx-auto">
-                    <li class="breadcrumb-item active">Edit Menu</li>
+                    <li class="breadcrumb-item">Edit Menu</li>
                     <li class="breadcrumb-item">
                         <a href="orderpage.html">View Order</a>
                     </li>
                     <li class="breadcrumb-item active">
+                        <a href="feedbackview.html">Feedbacks</a>
+                    </li>
+                    <li class="breadcrumb-item">
                         <a href="#" onclick="logOut()">LOG OUT</a>
                     </li>
                 </ol>
@@ -88,22 +91,23 @@
             <div class="row">
                 <div class="col-sm-9">
                     <div class="text-center">
-                        <h5 class="tittle_head">TODAY'S MENU</h5>
+                        <h5 class="tittle_head">Feedbacks</h5>
                         <br><br>
                     </div>
-                    <table width="89%" class="table-fill" id="ordertable">
+                    <table width="89%" class="table-fill" id="feedbacktable">
                         <thead>
                             <tr>
-                                <th class="text-left">FOOD NAME</th>
-                                <th class="text-left">DETAILS</th>
-                                <th class="text-left">PRICE</th>
+                                <th class="text-left">NAME</th>
+                                <th class="text-left">Contact</th>
+                                <th class="text-left">Feedback</th>
+                                <th class="text-left">Date</th>
                             </tr>
                         </thead>
                         <tbody class="table-hover" id="">
 
                         </tbody>
                     </table>
-                    <form action="mainpage.html" id="deletefoodform">
+                    <form action="mainpage.html" id="deletefeedbackform">
                         <div class="text-center">
                             <br><br>
                             <input type="submit" value="Delete All">
@@ -115,44 +119,17 @@
                 <br><br>
 
                 <div class="col-sm-3">
-                    <div class="text-center">
-                        <h5 class="tittle_head">ADD NEW ITEM</h5>
-                        <br><br>
-                    </div>
-                    <form action="mainpage.html" id="addfoodForm">
-                        <div class="fields-grid">
-                            <div class="styled-input agile-styled-input-top">
-
-                                <input type="text" class="form-control" id="itemname" placeholder="Item Name" required>
-                                <br>
-                            </div>
-                            <div class="styled-input">
-
-                                <textarea class="form-control" id="desc" placeholder="Description" required></textarea>
-                                <br>
-                            </div>
-                            <div class="styled-input agile-styled-input-top">
-
-                                <input type="text" class="form-control" id="price" placeholder="Price" required>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="text-center">
-                            <input type="submit" value="Add Item">
-                        </div>
-                    </form>
-                </div>
+                    
             </div>
             <!-- </div>
 
             </div> -->
 
     </section>
-    <script src="JS/dataadd.js"></script>
+   
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="JS/dataview.js"></script>
-    <script src="JS/datadelete.js"></script>
+    <script src="JS/feedbackview.js"></script>
+    <script src="JS/feedbackdelete.js"></script>
     <!-- //contact -->
 
     <!-- footer -->
