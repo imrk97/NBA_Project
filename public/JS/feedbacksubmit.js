@@ -24,5 +24,5 @@ function submitForm(e) {
 
     ref.push(data);
 
-    alert(cust_name + ", your feedback has been sent to us..Thank you..");
+    alert(" your feedback has been sent to us..Thank you..");
 }
