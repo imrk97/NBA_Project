@@ -5,8 +5,8 @@ function submitForm(e) {
 
     console.log('after prevent default');
     let roll=document.getElementById("clgroll").value.trim();
-    var cust_name = document.getElementById("name").value.trim();
-    var cust_email = document.getElementById("email").value.trim();
+    //var cust_name = document.getElementById("name").value.trim();
+    //var cust_email = document.getElementById("email").value.trim();
     var cust_feedback = document.getElementById("feedback").value.trim();
     var temp_date = new Date();
     var temp_month=temp_date.getMonth() +1;
@@ -15,9 +15,9 @@ function submitForm(e) {
     var ref = database.ref('Feedback');
 
     var data = {
-        name: cust_name,
+        
         rollno: roll,
-        email: cust_email,
+        
         issue: cust_feedback,
         date: cust_date
     }
