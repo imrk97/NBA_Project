@@ -4,7 +4,7 @@ function submitForm(e) {
     e.preventDefault();
 
     console.log('after prevent default');
-    let roll=11;
+    let roll=document.getElementById("clgroll").value.trim();
     var cust_name = document.getElementById("name").value.trim();
     var cust_email = document.getElementById("email").value.trim();
     var cust_feedback = document.getElementById("feedback").value.trim();
