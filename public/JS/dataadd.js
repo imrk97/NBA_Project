@@ -22,7 +22,7 @@ function addForm(e) {
     }
     ref.push(data);
 
-    $('#addeditem').append(food_name + "  Added")
-    //alert(food_name + "  Added");
-    //location.reload();
+    //$('#addeditem').append(food_name + "  Added")
+    alert(food_name + "  Added");
+    location.reload();
 }
