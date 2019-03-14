@@ -2,11 +2,10 @@
 <html lang="zxx">
 
 <head>
-    <title>View Orders</title>
+    <title>Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="" />
-    <meta http-equiv="refresh" content="10" />
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -17,7 +16,6 @@
         }
 
     </script>
-
     <script>
         history.pushState(null, null, document.URL);
         window.addEventListener('popstate', function () {
@@ -32,11 +30,7 @@
             location.replace("login.html");
         }
     </script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script src="JS/connection.js"> </script>
 
-    <script src="JS/main.js"></script>
-    <link href="css/tablestyle.css" type="text/css" rel="stylesheet" media="all">
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <!-- portfolio -->
@@ -50,7 +44,8 @@
         rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
     <!-- //online-fonts -->
-    <script src="JS/logout.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="JS/connection.js"></script>
     <link rel="icon" type="image/png" href="images/bppimt.ico" />
 </head>
 
@@ -61,11 +56,11 @@
             <!-- //banner -->
             <div class="inner-page-info text-center">
                 <ol class="breadcrumb text-center mx-auto">
+                    <li class="breadcrumb-item">Edit Menu</li>
                     <li class="breadcrumb-item">
-                        <a href="mainpage.html">Edit Menu</a>
+                        <a href="orderpage.html">View Order</a>
                     </li>
-                    <li class="breadcrumb-item active">View Order</li>
-                    <li class="breadcrumb-item">
+                    <li class="breadcrumb-item active">
                         <a href="register.html">Register</a>
                     </li>
                     <li class="breadcrumb-item">
@@ -82,47 +77,44 @@
     <section class="wedo py-lg-5 py-5">
         <div class="container py-lg-5 py-3">
             <div class="text-center">
-                <h3 class="tittle_head">TODAY'S ORDER</h3>
+                <h3 class="tittle_head">Register</h3>
             </div>
-            <br><br>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="text-center">
-                    </div>
-                    <table width="89%" class="table-fill" id="ordertable">
-                        <thead>
-                            <tr>
-                                <th class="text-left">FOOD NAME</th>
-                                <th class="text-left">NO OF ORDER</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-hover" id="">
+            <div class="contact-info row py-5">
 
-                        </tbody>
-                    </table>
+                <div class="col-lg-6 contact-form">
+                    <form id="regFormID">
+                        <div class="fields-grid">
+                            <div class="styled-input agile-styled-input-top">
+                                <label>Roll No *</label>
+                                <input type="number" class="form-control" id="rollno" placeholder="" required>
+                            </div>
 
+                        </div>
+                        <br>
+                        <input type="submit" value="Genarate Password">
+                    </form>
+                    <br>
+                    <h5 style="color:red" id="passwordshow"></h5>
                 </div>
-                
-                <br><br>
-               
-
 
             </div>
 
     </section>
-    <script src="JS/orderview.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <!-- //contact -->
+
 
     <!-- footer -->
     <section class="foot-top-w3layouts pt-5">
 
         <div class="cpy-right text-center pb-5">
+
             <a href="#home" class="move-top scroll"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
         </div>
     </section>
     <!-- //footer -->
-
+    <script src="JS/register.js"></script>
+    <script src="JS/logout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </body>
 
 </html>
