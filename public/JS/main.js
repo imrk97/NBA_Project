@@ -25,8 +25,9 @@ function adminValidation(e) {
             location.replace("mainpage.html");
         }
         else {
-            alert("Username & password mismatch");
-            location.reload();
+            //alert("Username & password mismatch");
+            //location.reload();
+            $('#mismatch').append('Username & password mismatch!!')
         }
     });
     //password verification

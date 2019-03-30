@@ -17,12 +17,12 @@ function addForm(e) {
         FoodName: food_name,
         FoodDesc: food_desc,
         FoodPrice: food_price,
-        OrderName: food_name + ' ( ' + food_desc + ' )' + '    ₹ ' + food_price,
+        OrderName: food_name + ' (' + food_desc + ')' + '  ₹' + food_price,
         FoodOrder: '0'
     }
     ref.push(data);
 
-
+    //$('#addeditem').append(food_name + "  Added")
     alert(food_name + "  Added");
     location.reload();
 }

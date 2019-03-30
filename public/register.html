@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Log In to BPPIMT Canteen System</title>
+    <title>Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="" />
@@ -15,6 +15,20 @@
             window.scrollTo(0, 1);
         }
 
+    </script>
+    <script>
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    </script>
+
+    <script>
+        if (sessionStorage.getItem("cheak_flag") != '1') {
+            window.stop();
+            alert("Please login First");
+            location.replace("login.html");
+        }
     </script>
 
     <!-- Custom Theme files -->
@@ -37,46 +51,50 @@
 
 <body>
     <section class="inner-banner" id="home">
-
-        <!-- //Navigation -->
-        <!-- //banner -->
-        <div class="inner-page-info text-center">
-            <ol class="breadcrumb text-center mx-auto">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li class="breadcrumb-item active">Login</li>
-            </ol>
-            <!---->
-        </div>
+        <div class="header-top-w3layouts text-right">
+            <!-- //Navigation -->
+            <!-- //banner -->
+            <div class="inner-page-info text-center">
+                <ol class="breadcrumb text-center mx-auto">
+                    <li class="breadcrumb-item">Edit Menu</li>
+                    <li class="breadcrumb-item">
+                        <a href="orderpage.html">View Order</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="feedbackview.html">Feedbacks</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" onclick="logOut()">LOG OUT</a>
+                    </li>
+                </ol>
+                <!---->
+            </div>
     </section>
     <!-- /contact -->
     <section class="wedo py-lg-5 py-5">
         <div class="container py-lg-5 py-3">
             <div class="text-center">
-                <h3 class="tittle_head">Log In</h3>
+                <h3 class="tittle_head">Register</h3>
             </div>
             <div class="contact-info row py-5">
 
                 <div class="col-lg-6 contact-form">
-                    <form id="loginform">
+                    <form id="regFormID">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
-                                <label>Username *</label>
-                                <input type="username" class="form-control" id="user_temp" placeholder="" required>
+                                <label>Roll No *</label>
+                                <input type="number" class="form-control" id="rollno" placeholder="" required>
                             </div>
-                            <div class="styled-input">
-                                <label>Password *</label>
-                                <input type="password" autocomplete="current-password" class="form-control"
-                                    id="pass_temp" placeholder="" required>
 
-                            </div>
                         </div>
                         <br>
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Genarate Password">
                     </form>
-                    <p style="color:red;font-weight: 750" id="mismatch"></p>
+                    <br>
+                    <h5 style="color:red" id="passwordshow"></h5>
                 </div>
 
             </div>
@@ -94,8 +112,9 @@
         </div>
     </section>
     <!-- //footer -->
+    <script src="JS/register.js"></script>
+    <script src="JS/logout.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="JS/main.js"></script>
 </body>
 
 </html>
